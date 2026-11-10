@@ -7,7 +7,8 @@
 <meta name="description" content="Alumina ativada importada, nova, em embalagem original. Granulometrias 7 x 14 mesh e 2,0 a 3,0 mm. Embalagens de 1 kg a 1.000 kg. Atendimento em todo o Brasil.">
 <link rel="canonical" href="https://www.petraquim.com.br/">
 <meta name="theme-color" content="#4B5320">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Petraquim — Ita-Bio Soluções">
@@ -22,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Ita-Bio Soluções Ltda.","alternateName":"Petraquim","url":"https://www.petraquim.com.br/","email":"joseroberto@petraquim.com.br","telephone":"+55-11-2267-3311","taxID":"14.392.945/0001-00","address":{"@type":"PostalAddress","streetAddress":"Av. Paulista, 2073 — Bela Vista","postalCode":"01311-010","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.instagram.com/itabio.solucoes/"]}
+{"@context":"https://schema.org","@type":"Organization","name":"Ita-Bio Soluções Ltda.","alternateName":"Petraquim","url":"https://www.petraquim.com.br/","email":"joseroberto@petraquim.com.br","telephone":"+55-11-2267-3311","taxID":"14.392.945/0001-00","address":{"@type":"PostalAddress","streetAddress":"Av. Paulista, 2073 — Bela Vista","postalCode":"01311-010","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"logo":"https://www.petraquim.com.br/logo-itabio.png","sameAs":["https://www.instagram.com/itabio.solucoes/"]}
 </script>
 <style>
 :root{--oliva:#4B5320;--oliva-esc:#3A4119;--oliva-90:#2F3514;--ouro:#C5A253;--ouro-claro:#E9D9AE;--creme:#F7F5EE;--texto:#24251E;--cinza:#5F6052;--borda:#E4E0D2;--wa:#1E8E4E;--sombra:0 10px 30px rgba(36,37,30,.10)}
@@ -34,15 +35,13 @@ a{color:inherit}
 img{display:block;max-width:100%;height:auto}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 /* topo */
-header{position:sticky;top:0;z-index:20;background:rgba(75,83,32,.97);backdrop-filter:blur(6px);border-bottom:3px solid var(--ouro)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:3px solid var(--ouro);box-shadow:0 2px 12px rgba(36,37,30,.06)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.marca svg{width:44px;height:44px;flex:none}
-.marca b{display:block;font-family:Lora,Georgia,serif;font-size:19px;letter-spacing:.5px;line-height:1.1}
-.marca small{display:block;color:var(--ouro);font-size:11px;letter-spacing:2.2px;text-transform:uppercase}
+.marca img{height:56px;width:auto}
 nav{display:flex;align-items:center;gap:22px}
-nav a{color:#E8E4CF;text-decoration:none;font-size:15px;font-weight:600}
-nav a:hover{color:#fff}
+nav a{color:var(--oliva);text-decoration:none;font-size:15px;font-weight:600}
+nav a:hover{color:var(--oliva-90)}
 nav .nav-cta{background:var(--ouro);color:var(--oliva-90);padding:9px 16px;border-radius:999px}
 nav .nav-cta:hover{color:var(--oliva-90);filter:brightness(1.05)}
 /* hero */
@@ -87,6 +86,8 @@ tr:last-child th,tr:last-child td{border-bottom:0}
 th{width:34%;color:var(--oliva-esc);background:#FBFAF5;font-weight:700}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chips span{background:var(--creme);border:1px solid var(--borda);border-radius:999px;padding:2px 10px;font-size:15px;white-space:nowrap}
+.link-fds{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-weight:700;color:var(--oliva);text-decoration:none;border-bottom:2px solid var(--ouro)}
+.link-fds:hover{color:var(--oliva-90)}
 .galeria{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .galeria img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
 .galeria img:first-child{grid-column:1/-1;aspect-ratio:4/3}
@@ -136,7 +137,6 @@ footer a{color:var(--ouro-claro)}
 @media(max-width:560px){
  .apps,.campos,.selos{grid-template-columns:1fr}
  .btn{width:100%}
- .marca small{display:none}
  th,td{padding:12px 14px;font-size:16px}
  th{width:38%}
  .form{padding:24px}
@@ -156,10 +156,7 @@ footer a{color:var(--ouro-claro)}
 
 <header>
  <div class="wrap">
-  <a class="marca" href="#topo" aria-label="Petraquim — Ita-Bio Soluções, início">
-   <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="#C5A253" stroke-width="2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="#C5A253" stroke-width="1"/><text x="24" y="30.5" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="17" font-weight="600" fill="#C5A253">IB</text></svg>
-   <span><b>PETRAQUIM</b><small>Ita-Bio Soluções Ltda.</small></span>
-  </a>
+  <a class="marca" href="#topo" aria-label="Ita-Bio Soluções — Petraquim, início"><img src="logo-itabio.png" alt="Ita-Bio Soluções" width="155" height="56"></a>
   <nav aria-label="Seções">
    <a href="#aplicacoes">Aplicações</a>
    <a href="#especificacao">Especificação</a>
@@ -219,7 +216,7 @@ footer a{color:var(--ouro-claro)}
     <tr><th>Função</th><td>Secagem e adsorção</td></tr>
     <tr><th>Embalagens</th><td><div class="chips"><span>1 kg</span><span>5 kg</span><span>25 kg</span><span>50 kg</span><span>200 kg</span><span>1.000 kg</span></div></td></tr>
     <tr><th>Segurança</th><td>Não classificado como perigoso (ABNT NBR 14725). Não classificado como perigoso para transporte.</td></tr>
-    <tr><th>Documentação</th><td>Ficha com Dados de Segurança (FDS) disponível mediante solicitação</td></tr>
+    <tr><th>Documentação</th><td>Ficha com Dados de Segurança (FDS) — ABNT NBR 14725<br><a class="link-fds" href="FDS-Alumina-Ativada-Ita-Bio.pdf" data-conv="fds" download>Baixar FDS (PDF)</a></td></tr>
    </table>
    <div class="galeria rv">
     <img src="alumina-porcao.jpg" alt="Porção de alumina ativada" width="800" height="800" loading="lazy">
@@ -268,7 +265,7 @@ footer a{color:var(--ouro-claro)}
 <footer>
  <div class="wrap">
   <div>
-   <h4>Petraquim — Ita-Bio Soluções Ltda.</h4>
+   <h4>Ita-Bio Soluções Ltda. (Petraquim)</h4>
    CNPJ 14.392.945/0001-00<br>
    Av. Paulista, 2073 — Bela Vista<br>CEP 01311-010 — São Paulo/SP
   </div>
@@ -281,6 +278,7 @@ footer a{color:var(--ouro-claro)}
   <div>
    <h4>Mais</h4>
    Instagram: <a href="https://www.instagram.com/itabio.solucoes/" target="_blank" rel="noopener">@itabio.solucoes</a><br>
+   <a href="FDS-Alumina-Ativada-Ita-Bio.pdf" download>FDS — Alumina Ativada (PDF)</a><br>
    <a href="politica-de-privacidade.html">Política de privacidade</a>
   </div>
  </div>
