@@ -88,6 +88,12 @@ section{padding:84px 0}
 .app p{font-size:16px;color:var(--cinza)}
 .nota{display:flex;gap:10px;align-items:center;margin-top:26px;font-size:16px;color:var(--cinza)}
 .nota svg{width:20px;height:20px;flex:none}
+.perto{background:#fff}
+.midia{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.midia figure{margin:0;background:var(--creme);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
+.midia video,.midia img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#ddd}
+.midia figcaption{font-size:14px;color:var(--cinza);padding:10px 14px}
+@media(max-width:900px){.midia{grid-template-columns:1fr 1fr}.midia figure:first-child{grid-column:1/-1}.midia figure:first-child video{aspect-ratio:9/16;max-height:80vh;object-fit:contain;background:#111}}
 .espec{background:var(--creme)}
 .espec-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:start}
 table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--borda);border-radius:14px;overflow:hidden}
@@ -169,6 +175,7 @@ footer a{color:var(--ouro-claro)}
   <a class="marca" href="#topo" aria-label="Ita-Bio Soluções — Petraquim, início"><img src="logo-itabio.png" alt="Ita-Bio Soluções" width="155" height="56"></a>
   <nav aria-label="Seções">
    <a href="#aplicacoes">Aplicações</a>
+   <a href="#produto">Produto</a>
    <a href="#especificacao">Especificação</a>
    <a class="nav-cta" href="#cotacao">Pedir cotação</a>
   </nav>
@@ -210,6 +217,17 @@ footer a{color:var(--ouro-claro)}
    <div class="app rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#4B5320" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3"/><path d="M7.5 14h9"/></svg></div><h3>Laboratório e sistemas piloto</h3><p>Colunas e ensaios em pequena escala.</p></div>
   </div>
   <p class="nota rv"><svg viewBox="0 0 24 24" fill="none" stroke="#C5A253" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg>A alumina ativada pode ser regenerada por aquecimento e reutilizada.</p>
+ </div>
+</section>
+
+<section class="perto" id="produto">
+ <div class="wrap">
+  <div class="titulo rv"><div class="linha"></div><h2>O produto de perto</h2><p>Imagens reais do material em estoque.</p></div>
+  <div class="midia">
+   <figure class="rv"><video src="alumina-video.mp4" poster="alumina-video-capa.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo da alumina ativada em grânulos"></video><figcaption>Grânulos esféricos de alumina ativada</figcaption></figure>
+   <figure class="rv"><img src="alumina-regua-1.jpg" alt="Grânulos de alumina ativada ao lado de uma régua" width="900" height="1600" loading="lazy"><figcaption>Grânulos ao lado de régua (escala em centímetros)</figcaption></figure>
+   <figure class="rv"><img src="alumina-regua-2.jpg" alt="Grânulos de alumina ativada ao lado de uma régua, outro ângulo" width="900" height="1600" loading="lazy"><figcaption>Outro ângulo, com régua para referência de tamanho</figcaption></figure>
+  </div>
  </div>
 </section>
 
