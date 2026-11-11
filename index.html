@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <!-- Google tag (Google Ads) -->
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KXJSFW6B"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18567411730"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'AW-18567411730');
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -299,7 +301,8 @@ footer a{color:var(--ouro-claro)}
 (function(){
  // Medição: cada clique de contato vira um evento. Quando a tag do Google Ads for instalada, esses eventos passam a contar como conversões.
  window.dataLayer=window.dataLayer||[];
- function medir(tipo){try{window.dataLayer.push({event:'contato',canal:tipo});if(typeof window.gtag==='function'){window.gtag('event','contato',{canal:tipo});}}catch(e){}}
+ var jaContou=false;
+ function medir(tipo){try{if(jaContou){window.dataLayer.push({event:'contato_repetido',canal:tipo});return;}jaContou=true;window.dataLayer.push({event:'contato',canal:tipo});if(typeof window.gtag==='function'){window.gtag('event','conversion',{send_to:'AW-18567411730/kGkyCPjDrrYdEJLw0JVF',value:1.0,currency:'BRL'});}}catch(e){}}
  document.addEventListener('click',function(e){var a=e.target.closest('[data-conv]');if(a&&a.tagName==='A'){medir(a.getAttribute('data-conv'));}});
 
  var f=document.getElementById('form-cotacao');
