@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """Partes comuns das páginas (cabeçalho, rodapé, ícones, imagens).
 Gerar o site:  python _fonte/gerar.py   (a partir da pasta do site)"""
 
@@ -126,7 +126,7 @@ gtag('js',new Date());gtag('config','AW-18567411730');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
-{preload}<link rel="stylesheet" href="assets/css/site.css?v=1">
+{preload}<link rel="stylesheet" href="assets/css/site.css?v=2">
 {jsonld}</head>"""
 
 
@@ -249,7 +249,7 @@ def rodape(lightbox=False):
  <p>Usamos cookies do Google apenas para medir o resultado dos nossos anúncios. Você pode aceitar ou recusar; o site funciona igual. <a href="politica-de-privacidade.html">Saiba mais</a>.</p>
  <div class="botoes"><button class="btn btn-contorno" type="button" data-consent="recusar">Recusar</button><button class="btn btn-primario" type="button" data-consent="aceitar">Aceitar</button></div>
 </div>{lb}
-<script src="assets/js/site.js?v=1" defer></script>
+<script src="assets/js/site.js?v=2" defer></script>
 </body>
 </html>
 """
