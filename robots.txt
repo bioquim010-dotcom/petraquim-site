@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_fonte/
 
 Sitemap: https://www.petraquim.com.br/sitemap.xml
